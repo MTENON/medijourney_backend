@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+require('./models/connection'); //connection mongoose
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -7,8 +11,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
-require('./models/connection'); //connection mongoose
 
 app.use(logger('dev'));
 app.use(express.json());

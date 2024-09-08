@@ -10,6 +10,12 @@ function checkBody(obj, array) {
         }
     }
     return true
-}
+};
 
-module.exports = { checkBody };
+function capitalize(string) {
+
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+
+};
+
+module.exports = { checkBody, capitalize };
